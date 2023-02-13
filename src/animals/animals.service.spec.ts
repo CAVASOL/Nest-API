@@ -1,6 +1,5 @@
 import { NotFoundException } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
-import { before } from 'node:test';
 import { AnimalsService } from './animals.service';
 
 describe('AnimalsService', () => {

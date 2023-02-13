@@ -20,14 +20,8 @@ export class AnimalsController {
     return this.animalsService.getAll();
   }
 
-  // @Get('search')
-  // search(@Query('name') searchingName: string) {
-  //   return `We are searching for an animal with a name: ${searchingName} `;
-  // }
-
   @Get(':id')
   getOne(@Param('id') animalId: number): Animal {
-    console.log(typeof animalId);
     return this.animalsService.getOne(animalId);
   }
 
